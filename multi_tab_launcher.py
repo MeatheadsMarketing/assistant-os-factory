@@ -40,7 +40,8 @@ if tabs:
         selected_title = tabs[selected_index]
         suggestion_prompt = f"""Based on this assistant, suggest a useful next assistant idea:
 {selected_title}
-Return only the assistant title and a one-line description."""
-        st.code(suggestion_prompt, language="markdown")
+Return only the assistant title and a one-line description."""  # ✅ This line ends the string
+
+st.code(suggestion_prompt, language="markdown")
 else:
     st.info("No assistants with `run_ui()` found.")
