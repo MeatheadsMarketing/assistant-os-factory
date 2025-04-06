@@ -14,7 +14,7 @@ modules = []
 for folder in sorted(os.listdir(ASSISTANT_DIR)):
     folder_path = os.path.join(ASSISTANT_DIR, folder)
     if not os.path.isdir(folder_path):
-        continue
+        continue  # Skip non-folders like this file
 
     py_files = [f for f in os.listdir(folder_path) if f.endswith(".py")]
     for py_file in py_files:
@@ -35,13 +35,12 @@ if tabs:
     st.divider()
     modules[selected_index].run_ui()
 
-    # GPT Suggestion Area (with verified triple quotes)
     with st.expander("💡 GPT Suggestion"):
         selected_title = tabs[selected_index]
         suggestion_prompt = f"""Based on this assistant, suggest a useful next assistant idea:
 {selected_title}
-Return only the assistant title and a one-line description."""  # ✅ This line ends the string
-
-st.code(suggestion_prompt, language="markdown")
+Return only the assistant title and a one-line description."""
+        st.code(suggestion_prompt, language="markdown")
 else:
     st.info("No assistants with `run_ui()` found.")
+
