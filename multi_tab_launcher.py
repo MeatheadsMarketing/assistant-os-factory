@@ -5,7 +5,8 @@ import os
 st.set_page_config(page_title="Assistant Launcher", layout="wide")
 st.title("🧠 Modular Assistant Launcher")
 
-ASSISTANT_DIR = os.path.dirname(__file__)
+# ✅ Cloud-safe directory fix
+ASSISTANT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "."))
 
 tabs = []
 modules = []
@@ -14,7 +15,7 @@ modules = []
 for folder in sorted(os.listdir(ASSISTANT_DIR)):
     folder_path = os.path.join(ASSISTANT_DIR, folder)
     if not os.path.isdir(folder_path):
-        continue  # Skip non-folders like this file
+        continue
 
     py_files = [f for f in os.listdir(folder_path) if f.endswith(".py")]
     for py_file in py_files:
@@ -41,6 +42,6 @@ if tabs:
 {selected_title}
 Return only the assistant title and a one-line description."""
         st.code(suggestion_prompt, language="markdown")
+
 else:
     st.info("No assistants with `run_ui()` found.")
-
