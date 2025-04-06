@@ -14,7 +14,7 @@ modules = []
 for folder in sorted(os.listdir(ASSISTANT_DIR)):
     folder_path = os.path.join(ASSISTANT_DIR, folder)
     if not os.path.isdir(folder_path):
-        continue  # Skip files like this launcher itself
+        continue
 
     py_files = [f for f in os.listdir(folder_path) if f.endswith(".py")]
     for py_file in py_files:
@@ -35,7 +35,7 @@ if tabs:
     st.divider()
     modules[selected_index].run_ui()
 
-    # GPT Suggestion Area (validated)
+    # GPT Suggestion Area (with verified triple quotes)
     with st.expander("💡 GPT Suggestion"):
         selected_title = tabs[selected_index]
         suggestion_prompt = f"""Based on this assistant, suggest a useful next assistant idea:
