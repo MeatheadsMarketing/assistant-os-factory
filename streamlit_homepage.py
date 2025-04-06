@@ -1,5 +1,5 @@
 # streamlit_homepage.py
-"""Unified dashboard with exec-based loader for all Streamlit-ready tools."""
+"""Unified dashboard with working exec-based internal paths."""
 
 import streamlit as st
 import os
@@ -32,7 +32,7 @@ tool = st.sidebar.selectbox("🔧 Choose a Tool", [
 
 tool_paths = {
     "Multi-Tab Launcher": "streamlit_ready/multi_tab_launcher.py",
-    "DAG Designer": "streamlit_ready/pipeline_designer_phase2.py",
+    "DAG Designer": "streamlit_ready/v1.5_pipeline_designer_phase2.py",
     "Run from DAG": "streamlit_ready/v2.0_run_from_dag.py",
     "Showcase Flow Runner": "streamlit_ready/v1.10_showcase_runner.py",
     "Manifest Dashboard": "streamlit_ready/manifest_dashboard.py",
@@ -45,5 +45,4 @@ tool_paths = {
     "Colab Flow Orchestrator": "tools/v5.9_colab_flow_orchestrator.py"
 }
 
-selected_path = tool_paths.get(tool)
-run_external(selected_path)
+run_external(tool_paths.get(tool))
