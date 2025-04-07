@@ -1,0 +1,19 @@
+[
+  {
+    "name": "showcase_ai_data_pipeline.json",
+    "description": "Full AI demo DAG with cleaner + GPT + export",
+    "tags": [
+      "demo",
+      "gpt",
+      "csv"
+    ]
+  },
+  {
+    "name": "cleaning_only_dag.json",
+    "description": "CSV cleaner only",
+    "tags": [
+      "data",
+      "cleaning"
+    ]
+  }
+]

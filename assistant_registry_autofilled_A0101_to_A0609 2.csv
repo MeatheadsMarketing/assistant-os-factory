@@ -1,0 +1,4 @@
+unique_id,name,category,capability,impact_score,tags,uses_gpt,input_format,output_format,dependencies,chainability,example_input,example_output
+A0101,File Upload Handler,Input & Staging,core,85,"['file', 'upload', 'handler']",False,file,DataFrame + metadata,,Dataset Stager,sales_q1_2024.csv,DataFrame
+A0102,Google Drive Batch Importer,Input & Staging,advanced,88,"['google', 'drive', 'import']",False,folder,dict of DataFrames,,Folder to Table,/client_uploads/,{'/client_uploads/file1.csv': df}
+A0103,Metadata Auto-Tagger,Data Enrichment,advanced,87,"['metadata', 'tagging']",True,DataFrame,list of tags,,Staging Dashboard Generator,"columns = ['revenue', 'cost', 'profit']","['finance', 'monthly_data']"
