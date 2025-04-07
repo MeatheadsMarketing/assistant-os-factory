@@ -1,0 +1,18 @@
+[
+  {
+    "name": "remove_duplicate_rows_from_csv_dataset",
+    "description": "A tool for Remove Duplicate Rows from CSV Dataset",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "type": "string",
+          "description": "input input"
+        }
+      },
+      "required": [
+        "input"
+      ]
+    }
+  }
+]
