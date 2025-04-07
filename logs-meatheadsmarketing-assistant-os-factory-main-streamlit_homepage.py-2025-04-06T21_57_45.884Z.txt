@@ -1,0 +1,68 @@
+
+[     UTC     ] Logs for assistant-os-factory-gasa2bzs39uhzkthmsvxkq.streamlit.app/
+────────────────────────────────────────────────────────────────────────────────────────
+[21:56:53] 🖥 Provisioning machine...
+[21:56:53] 🎛 Preparing system...
+[21:56:53] ⛓ Spinning up manager process...
+[21:56:55] 🚀 Starting up repository: 'assistant-os-factory', branch: 'main', main module: 'streamlit_homepage.py'
+[21:56:55] 🐙 Cloning repository...
+[21:56:56] 🐙 Cloning into '/mount/src/assistant-os-factory'...
+Warning: Permanently added the ED25519 host key for IP address '140.82.116.4' to the list of known hosts.
+
+[21:56:56] 🐙 Cloned repository!
+[21:56:56] 🐙 Pulling code changes from Github...
+[21:56:57] 📦 Processing dependencies...
+Check if streamlit is installed
+cat: /mount/admin/install_path: No such file or directory
+
+──────────────────────────────── Installing Streamlit ──────────────────────────────────
+
+Using uv pip install.
+Using Python 3.12.9 environment at /home/adminuser/venv
+Resolved [2025-04-06 21:56:58.651309] 37 packages in 501ms
+Prepared 37 packages in 2.01s
+Installed 37 packages in 93ms
+ + altair==5.5.0
+ + attrs==25.3.0
+ + blinker==1.9.0
+ + cachetools==5.5.2
+ + certifi[2025-04-06 21:57:00.761846] ==2025.1.31
+ + charset-normalizer==3.4.1
+ + click==8.1.8
+ + gitdb==4.0.12[2025-04-06 21:57:00.762113] 
+ + gitpython==3.1.44
+ + idna==3.10
+ + jinja2==3.1.6
+ + jsonschema==4.23.0
+ + jsonschema-specifications==[2025-04-06 21:57:00.762266] 2024.10.1
+ + markupsafe==3.0.2
+ + narwhals==1.33.0
+ + numpy==2.2.4
+ + packaging==24.2
+ + pandas==[2025-04-06 21:57:00.762429] 2.2.3
+ + pillow==11.1.0
+ + protobuf==5.29.4
+ + pyarrow==19.0.1[2025-04-06 21:57:00.762675] 
+ + pydeck==0.9.1
+ + python-dateutil==2.9.0.post0
+ + pytz==[2025-04-06 21:57:00.763605] 2025.2
+ + referencing==0.36.2
+ + requests==2.32.3
+ + rpds-py==0.24.0
+ + six==[2025-04-06 21:57:00.763808] 1.17.0
+ + smmap==5.0.2
+ + streamlit==1.44.1
+ + tenacity==9.1.2
+ + toml[2025-04-06 21:57:00.764047] ==0.10.2
+ + tornado==6.4.2
+ + typing-extensions==4.13.1
+ + tzdata==2025.2
+ + urllib3==2.3.0[2025-04-06 21:57:00.764210] 
+ + watchdog==6.0.0
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[21:57:02] 📦 Processed dependencies!
+cat: /mount/admin/install_path: No such file or directory
+
+
